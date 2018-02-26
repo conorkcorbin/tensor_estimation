@@ -1,10 +1,4 @@
 import argparse
-import pandas as pd
-import numpy as np
-import nibabel as nib
-import os
-import sys
-from dipy.io import read_bvals_bvecs
 
 from TensorEstimator import TensorEstimator
 
