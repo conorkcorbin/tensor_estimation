@@ -103,7 +103,7 @@ class TensorEstimator:
                                 g[2]**2,2*g[0]*g[1],
                                 2*g[0]*g[2], 2*g[1]*g[2]])
                                 for g in bvecs]) # shape = (N x 6)
-        W = np.linalg.lstsq(X, Y) # shape = (N x 6)
+        W = np.linalg.lstsq(X, Y) # shape = (1 x 6)
         W = W[0] # just solutions (not residuals)
         tensor = np.array([[W[0], W[3], W[4]],
                            [W[3], W[1], W[5]],
